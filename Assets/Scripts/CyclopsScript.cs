@@ -33,8 +33,17 @@ public class CyclopsScript : MonoBehaviour {
 
 			line.SetPosition(0, ray.origin);
 
-			if (Physics.Raycast(ray, out hit, 100))
+			if (Physics.Raycast(ray, out hit, 100)){
 				line.SetPosition(1, hit.point);
+				if (hit.rigidbody){
+					//hit.rigidbody.AddForceAtPosition(transform.forward*5, hit.point);
+					GameObject collidee = hit.rigidbody.gameObject;
+					if (collidee.tag == "DestWall"){
+						Hit s = collidee.GetComponent<Hit>();
+						s.destruct = true;
+					}
+				}
+			}
 			else
 				line.SetPosition(1, ray.GetPoint(100));
 

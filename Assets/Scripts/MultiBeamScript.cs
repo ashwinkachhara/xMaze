@@ -16,6 +16,7 @@ public class MultiBeamScript : MonoBehaviour {
 			newBeamL.AddComponent<CyclopsScript>();
 			newBeamL.transform.localPosition = new Vector3(-i, 0, (float)0.5);
 			newBeamL.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 90));
+			newBeamL.tag = "Player";
 
 			newBeamR = new GameObject();
 			newBeamR.transform.parent = transform;
@@ -23,6 +24,7 @@ public class MultiBeamScript : MonoBehaviour {
 			newBeamR.AddComponent<CyclopsScript>();
 			newBeamR.transform.localPosition = new Vector3(i, 0, (float)0.5);
 			newBeamR.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 90));
+			newBeamR.tag = "Player";
 		}
 	}
 
