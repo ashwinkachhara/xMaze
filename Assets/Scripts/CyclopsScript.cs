@@ -24,6 +24,7 @@ public class CyclopsScript : MonoBehaviour {
 		}
 	}
 
+	//Set start and end points of the linerenderer by using raycasthit
 	IEnumerator FireLaser(){
 		line.enabled = true;
 

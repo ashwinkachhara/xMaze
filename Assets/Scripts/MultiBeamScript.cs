@@ -6,7 +6,7 @@ public class MultiBeamScript : MonoBehaviour {
 	GameObject newBeamL, newBeamR;
 	float i;
 
-	// Use this for initialization
+	// Spawn multiple linerenderers to make the cyclops beam.
 	void Start () {
 		for (i = (float)0.5; i>0; i-=(float)0.02) {
 			//Debug.Log (i);

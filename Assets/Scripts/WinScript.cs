@@ -2,14 +2,13 @@
 using System.Collections;
 using UnityEngine.UI;
 
+// This script displays the "Winner!!!" dialog when player is in the vicinity of the treasure chest.
 public class WinScript : MonoBehaviour {
 
-	//Text win;
 	GameObject player, chest;
-	Transform canvas;
 	public GameObject text;
 
-	// Use this for initialization
+	// 
 	void Start () {
 		player = GameObject.Find ("Cyclops");
 		chest = this.gameObject;
