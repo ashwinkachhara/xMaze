@@ -20,7 +20,7 @@ Import the whole project into Unity and run the Scene Maze1.unity with the DK2 i
 
 ### Issues/To-Do:
 - The laser beam, made of linerenderers does not display correctly in the build. The color and with are still default. Whereas Playing in unity gives a translucent red beam of appropriate width.
-- Laser still passes through certain parts of the maze i.e. corners of cells. This is because I had to reduce the collider size to 0.95 times of the wall length. Using a custom collider (paralleloid in shape) would be a better solution (for the current case of a hexagonal maze) that doesn't cause the maze to collapse.
+- Laser still passes through certain parts of the maze i.e. corners of cells. This is because I had to reduce the collider size to 0.95 times of the wall length. Using a custom collider (trapezoid in shape) would be a better solution (for the current case of a hexagonal maze) that doesn't cause the maze to collapse.
 - Structurally, I should consider making the maze from more appropriate building blocks and colliders.
 - Use better assets.
 
